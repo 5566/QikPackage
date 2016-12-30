@@ -76,6 +76,8 @@
 - (void)setupProjectPath:(NSString *)aPath {
     _preference.projectDirectory = aPath;
     
+    [_preference removeAllSchemes];
+    
     [self parseSchemesOfProject:aPath];
 }
 

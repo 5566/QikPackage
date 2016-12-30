@@ -28,6 +28,8 @@
 
 - (void)removeScheme:(NSString *)aScheme;
 
+- (void)removeAllSchemes;
+
 - (BOOL)containtScheme:(NSString *)aScheme;
 
 @end

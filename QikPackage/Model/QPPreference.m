@@ -106,6 +106,11 @@ static NSString * const ExportOptions_File = @"ExportOptions.plist";
     [_schemeList removeObject:aScheme];
 }
 
+- (void)removeAllSchemes {
+    [_schemeList removeAllObjects];
+}
+
+
 - (BOOL)containtScheme:(NSString *)aScheme {
     return [_schemeList containsObject:aScheme];
 }
